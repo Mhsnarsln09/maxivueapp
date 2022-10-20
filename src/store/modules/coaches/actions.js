@@ -9,6 +9,7 @@ export default {
             areas: formData.areas           
         }
         context.commit('registerCoach', coachData)
+        console.log("actions");
         
     }
 }

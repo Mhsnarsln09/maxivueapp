@@ -70,11 +70,6 @@ export default {
     
     },
   },
-  watch: {
-    filteredCoaches(val) {
-      console.log(val);
-    },
-  },
 };
 </script>
 <style scoped>
