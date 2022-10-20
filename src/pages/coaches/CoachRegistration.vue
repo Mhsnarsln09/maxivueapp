@@ -18,10 +18,10 @@ export default {
     },
     methods:{
         saveData(formData){
-            console.log("dispatch");
+            
         this.$store.dispatch('coaches/registerCoach', formData)
-        this.$router.replace('/coaches')
-    
+        this.$router.push('/coaches')
+        
     }
     }
 }

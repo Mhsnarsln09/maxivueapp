@@ -111,7 +111,7 @@ export default {
                 areas: this.areas.val
             }
            this.$emit("save-data", formData)
-           console.log("emit");
+       
          
         }
     }
