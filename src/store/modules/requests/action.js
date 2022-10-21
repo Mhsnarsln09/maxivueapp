@@ -7,6 +7,6 @@ export default {
         message: data.email
     }
     context.commit('addRequest', newRequest)
-    console.log('useremail', newRequest.userEmail)
+   
     }
 }

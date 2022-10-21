@@ -6,9 +6,9 @@
       </header>
       <ul v-if="hasRequests">
         <RequestsItem
-          v-for="reg in receivedRequests"
-          :key="reg.id"
-          :email="req.userEmail"
+          v-for="(reg,index) in receivedRequests"
+          :key="index"
+          :email="reg.userEmail"
           :message="reg.message"
         ></RequestsItem>
       </ul>
@@ -19,14 +19,19 @@
 
 <script>
 import RequestsItem from "@/components/requests/RequestsItem.vue";
+
 export default {
+
   components: {
     RequestsItem,
+    
   },
   computed: {
     receivedRequests() {
       return this.$store.getters["requests/requests"];
+     
     },
+    // ...mapGetters(['requests/requests']),
     hasRequests() {
       return this.$store.getters["requests/hasRequests"];
     },

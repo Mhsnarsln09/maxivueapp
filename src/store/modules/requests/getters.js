@@ -1,6 +1,6 @@
 export default {
     requests(state){
-        console.log("getters",state.requests)
+        
         return state.requests
     },
     hasRequests (state){
